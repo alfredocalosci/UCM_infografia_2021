@@ -1,5 +1,6 @@
 function setup() {
   createCanvas(500, 500);
+  angleMode(DEGREES);
 }
 
 function draw() {
@@ -15,8 +16,8 @@ function draw() {
     square(405,5,90, 10);
 
     triangle(0,200,50,100,100,200);
-    arc(150,150,90,90,-HALF_PI, PI);
-    arc(250,150,90,90,-HALF_PI, HALF_PI + 0.5, CHORD);
+    arc(150,150,90,90,-90, 180);
+    arc(250,150,90,90,-90, 90, CHORD);
 
     strokeWeight(5);
     line(0,200,100,300);
