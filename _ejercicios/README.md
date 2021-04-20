@@ -1,10 +1,10 @@
-### iniziali (e parametri)
+### iniciales (y parametros)
 
-una versione parametrica delle tue iniziali  
+una versión *paramétrica* de tus iniciales 
 *a parametric version of your initials*
 
 ***
 
-### matrice
-sequenze e patterns  
+### matriz
+secuencias y texturas  
 *sequences and patterns*
