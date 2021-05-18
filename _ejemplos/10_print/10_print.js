@@ -1,13 +1,13 @@
 let w = 600;
 let n = 11;
 
-let dati = [];
+let datos = [];
 
 function setup() {
   createCanvas(w, w);
 
-  // crea i dati
-  creaDati();
+  // crea los datos
+  creaDatos();
 }
 
 function draw() {
@@ -38,7 +38,7 @@ function draw() {
             strokeWeight(8);
             stroke(0);
             // diagonali
-            if(dati[i] == 0){
+            if(datos[i] == 0){
                 line(x,y+m, x+m, y);
             } else {
                 line(x,y, x+m, y+m);
@@ -51,31 +51,29 @@ function draw() {
 }
 
 // coin flip algorithm
-function moneta(){
+function moneda(){
     let c = random(1);
 
-    let risultato = 1; // the result
+    let resultado = 1; // the result
     if(c < 0.5){
-        risultato = 0;
+        resultado = 0;
     }
-    return risultato;
+    return resultado;
 }
 
-function creaDati(){
+function creaDatos(){
     console.log("creo i dati");
 
-    dati = []; // new array or cleanUp
+    datos = []; // new array or cleanUp
 
     for(let i = 0; i < (n*n); i++){
-        dati.push(moneta());
+        datos.push(moneda());
     }
-    console.log(dati);
+    console.log(datos);
 
 }
 
 function keyTyped(){
   console.log(key);
-    creaDati();
-  // let aaa = moneta();
-  // console.log(aaa);
+  creaDatos();
 }
